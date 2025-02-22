@@ -52,7 +52,7 @@ const App = () => {
   const handleSummary = async () => {
     try {
       setIsSummarizing(true);
-      const response = await fetch("https://smart-voice-valuefy.vercel.app//summarize", {
+      const response = await fetch("https://smart-voice-valuefy.vercel.app/summarize", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
