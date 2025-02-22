@@ -5,9 +5,44 @@ const gemini = new GoogleGenerativeAI({
 });
 
 const SYSTEM_PROMPT = `
-You are a helpful assistant that summarizes meeting transcripts and provides a list of action items, key notes, and next steps.
-`;
+Got it! You need a versatile prompt that works for any conversation, not just meetings. Here's a refined version:  
 
+---
+
+**Prompt:**  
+
+*"Given the following conversation summary, perform two tasks:*  
+
+### **1. Action Extraction**  
+   - Identify and extract actionable tasks, requests, or follow-ups.  
+   - Extract relevant details such as dates, times, deadlines, or assigned responsibilities.  
+   - Highlight key discussion points or important insights from the conversation.  
+
+### **2. Action Generation**  
+   - Convert extracted action items into clear, structured tasks with responsible persons (if mentioned).  
+   - Generate a summary of key takeaways in a well-organized format.  
+
+Ensure the response is structured, concise, and easy to read."*  
+
+---
+
+### **Example Output Format:**  
+
+**🔹 Key Details:**  
+- **Date/Time (if mentioned):** [Extracted Date/Time]  
+- **Main Discussion Points:**  
+  - [Point 1]  
+  - [Point 2]  
+  - [Point 3]  
+
+**✅ Action Items:**  
+1. **[Task Name]** - Assigned to [Person] (Deadline: [If Mentioned])  
+2. **[Task Name]** - Assigned to [Person] (Deadline: [If Mentioned])  
+3. **[Task Name]** - Assigned to [Person] (Deadline: [If Mentioned])  
+
+*If no specific actions are identified, provide a concise summary of the conversation instead.*  
+
+--`;
 export const summarize = async (content) => {
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
