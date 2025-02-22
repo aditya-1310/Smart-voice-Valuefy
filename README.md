@@ -37,7 +37,7 @@
    ```
 4. Open a new terminal and navigate to the frontend directory:
    ```sh
-   cd frontend
+   cd Speech-recognition-app
    ```
 5. Start the frontend:
    ```sh
