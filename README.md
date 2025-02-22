@@ -17,7 +17,7 @@
    ```
 3. Build and run the Docker container:
    ```sh
-   docker-compose up --build
+   docker compose up 
    ```
 4. The application will be accessible at `http://localhost:PORT`.
 
