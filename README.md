@@ -1,10 +1,11 @@
 # Smart-Voice-Assistant
 
-## Live Demo
-[https://smart-voice-valuefy-x86j.vercel.app/](#)  
+## Live Demo  
+[Live Demo](https://smart-voice-valuefy-x86j.vercel.app/)  
 
-## Video Demonstration
-[https://drive.google.com/file/d/1ZEWxaiU89doMaYNVDXGtV4ekMGU_H0Ud/view?usp=sharing](#)  
+## Video Demonstration  
+[Watch Video](https://drive.google.com/file/d/1ZEWxaiU89doMaYNVDXGtV4ekMGU_H0Ud/view?usp=sharing)  
+
 
 ## How to Run the Project
 
