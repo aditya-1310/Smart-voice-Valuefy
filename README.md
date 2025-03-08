@@ -62,7 +62,7 @@ This project is an **AI-powered voice assistant** designed to help professionals
 🔹 **AI Processing:** Google Gemini AI – Summarizes key meeting insights and extracts action points.  
 🔹 **Email Service:** Nodemailer – Sends the summarized meeting notes via email.  
 
-By combining **AI-driven summarization** with **automated email sharing**, this project streamlines meeting workflows, ensuring professionals can stay engaged in discussions without losing critical information. 🚀
+By combining **AI-driven summarization** with **automated email sharing**, this project streamlines meeting workflows, ensuring professionals can stay engaged in discussions without losing critical information. 
 
 Feel free to explore the code and contribute to the project!
 
