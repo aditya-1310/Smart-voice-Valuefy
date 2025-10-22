@@ -39,7 +39,7 @@ const App = () => {
     });
 
   if (!browserSupportsSpeechRecognition) {
-    return <div>Browser doesn't support speech recognition.</div>;
+    return <div>Browser does not support speech recognition.</div>;
   }
 
   const handleTranscriptChange = (e) => {
