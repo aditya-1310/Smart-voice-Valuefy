@@ -5,9 +5,7 @@ const gemini = new GoogleGenerativeAI({
 });
 
 const SYSTEM_PROMPT = `
-Got it! You need a versatile prompt that works for any conversation, not just meetings. Here's a refined version:  
 
----
 
 **Prompt:**  
 
@@ -40,12 +38,10 @@ Ensure the response is structured, concise, and easy to read."*
 2. **[Task Name]** - Assigned to [Person] (Deadline: [If Mentioned])  
 3. **[Task Name]** - Assigned to [Person] (Deadline: [If Mentioned])  
 
-*If no specific actions are identified, provide a concise summary of the conversation instead.*  
-
 --`;
 export const summarize = async (content) => {
   const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+  const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   // Format the messages according to Gemini's expected structure
   const prompt = SYSTEM_PROMPT + "\n\nTranscript:\n" + content;
